@@ -478,6 +478,9 @@ footer p{text-align: center;
       height: auto;
       margin: 20px auto;
     }
+.rock-climbing p{font-size: 20px;}
+/* quiz */
+.quiz h3{font-size: 20px;}
 
     /* footer */
     footer {
