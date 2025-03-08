@@ -461,7 +461,15 @@ footer p{text-align: center;
       font-size: 20px;
       padding: 10px 20px;
     }
-    
+    /* about section */
+    .about h1{font-size: 20px;
+        line-height: normal;}
+
+.about p{font-size: 20px;}
+
+.about i,#green{font-size: 10px;}
+
+
     /* Adjust Grid to a single column*/
     .grid-container {
       grid-template-columns: 1fr;
