@@ -445,6 +445,7 @@ footer p{text-align: center;
     
     /* Adjust Hero Section for phones */
     .hero-parent div {
+    margin-bottom: 50px;
       width: 90%;
     }
     
