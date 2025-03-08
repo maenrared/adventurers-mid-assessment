@@ -388,7 +388,7 @@ footer p{text-align: center;
 }
 
 /* Tablet Devices */
-@media (min-width: 768px) and (max-width: 1024px) {
+@media (min-width: 768px) {
   nav {
     padding: 10px 20px;
   }
