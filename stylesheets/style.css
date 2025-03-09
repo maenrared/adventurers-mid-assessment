@@ -457,7 +457,6 @@ footer p{text-align: center;
     
 /* Adjust Hero Section for phones */
     .hero-parent div {
-    margin-bottom: 50px;
       width: 90%;
     }
     
@@ -474,6 +473,7 @@ footer p{text-align: center;
       padding: 10px 20px;
     }
 
+    .about{margin-top: 40px;}
 /* about section */
     .about h1{font-size: 20px;
         line-height: normal;}
