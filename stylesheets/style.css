@@ -334,7 +334,7 @@ footer p{text-align: center;
     .about {
       text-align: center;
       padding: 20px;
-      margin-top: 120px;  
+      margin-top: 50px;  
     }
     
     .about div {
@@ -473,8 +473,10 @@ footer p{text-align: center;
       padding: 10px 20px;
     }
 
-    .about{margin-top: 40px;}
+   
 /* about section */
+    .about{margin-top: 40px;}
+    
     .about h1{font-size: 20px;
         line-height: normal;}
         
