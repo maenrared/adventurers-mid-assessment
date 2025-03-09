@@ -4,9 +4,12 @@
     box-sizing: border-box;
     font-family: "Lora",serif}
 
+    body {
+      overflow-x: hidden;
+  } 
 /* hero and nav sections */
 .hero{
-    height: 100vh;
+    height: 120vh;
     background-image:url("https://lof8sc.yourbrand.studio/files/dynamicContent/sites/lof8sc/images/en/webpage_13/m5p6d1a5/element_252/rwdMode_1/2400x700/main.webp");
     background-repeat: no-repeat;
     background-position:center ;
@@ -15,13 +18,11 @@
 nav{
     display: flex;
     justify-content:space-evenly;
-    padding-top: 10px;
-    padding-left: 200px;
-    padding-right: 100px;
+    padding-top: 15px;
     align-items: center;}
 
 .logo{
-    width:180px}
+    width:150px}
     
 .logo img{
     width: 100%;}
@@ -30,9 +31,10 @@ nav{
     cursor: pointer;
     border:none;}
 
-.nav{display: flex;
-    gap: 30px;
-    margin-left: 500px;}
+.nav{
+  display: flex;
+  padding-left: 300px;
+  gap: 20px;}
 
 .nav2{background: none;
     padding: 7px;
@@ -57,8 +59,7 @@ a{
 #button-1{
     background:none;
     color: black;
-    padding:10px 70px;
-    margin-left: 30px;
+    padding:10px 50px;
     font-size: 25px;
     border-radius: 50px;}
 
@@ -89,7 +90,7 @@ a{
 .hero-parent button{
     color: black;
     background-color: white;
-    padding:15px 80px;
+    padding:10px 50px;
     font-size: 25px;
     border: none;
     border-radius: 50px;
@@ -107,10 +108,11 @@ a{
     justify-content: center;
     align-items: center;
     text-align: center;
-    height: 45vh;}
+    height: 45vh;margin-block: 150px;}
 
 .about div{
-    width: 45%;}
+    width: 45%;
+    }
 
 .about p{
     font-size: 25px;
@@ -143,7 +145,7 @@ a{
         align-items: center;}
         
 .box{
-        width: 33%;
+        width: 40%;
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -172,7 +174,7 @@ a{
 .buttons{ 
     color: white;
     background-color:rgb(121, 166, 144);
-    padding:20px 100px;
+    padding:10px 50px;
     font-size: 25px;
     border: none;
     border-radius: 50px;}
