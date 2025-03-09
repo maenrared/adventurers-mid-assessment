@@ -1,8 +1,17 @@
 
 //menu-icon
-function toggleMenu() {
-    document.querySelector(".nav").classList.toggle("active");
-}
+document.addEventListener("DOMContentLoaded", function () {
+  const menuIcon = document.querySelector(".menu-icon");
+  const nav = document.querySelector(".nav");
+
+  if (menuIcon && nav) {
+      menuIcon.addEventListener("click", function () {
+          nav.classList.toggle("active");
+      });
+  } else {
+      console.error("Menu icon or nav not found!");
+  }
+});
 
 //pop-images
 document.addEventListener("DOMContentLoaded", function() {

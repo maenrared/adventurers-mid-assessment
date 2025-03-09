@@ -4,9 +4,8 @@
     box-sizing: border-box;
     font-family: "Lora",serif}
 
-    body {
-      overflow-x: hidden;
-  } 
+ body{overflow-x: hidden;}  
+
 /* hero and nav sections */
 .hero{
     height: 120vh;
@@ -296,23 +295,43 @@ footer p{text-align: center;
     }
     
 /* Navigation adjustments for tablets */
-    nav {
-      flex-direction: row;
-      align-items: center;
-      padding: 10px 20px;
-    }
-    
-    .nav {
-      display: flex;
-      flex-direction: row;
-      margin-left: 20px;
-      gap: 20px;
-    }
-    
-/* Hide hamburger menu on tablets */
-    .menu-icon {
-      display: none;
-    }
+nav {
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 10px 20px;
+  position: relative;  
+}
+
+.nav {
+  display: none;
+  flex-direction: column;
+  position: absolute;   
+  top: 50px;           
+  right: 150px;            
+  width: 200px;       
+  z-index: 1000;
+  margin: 0; 
+  height: 45vh;
+  position: fixed;
+}
+
+.nav.active {
+  display: flex;
+}
+
+.menu-icon {
+  position: absolute;
+  top: 10px;
+  right: 20px;
+  display: block;
+  font-size: 30px;
+  cursor: pointer;
+}
+
+.nav2 {
+padding: 5px;
+font-size: 16px;
+}
     
 /* Hero Section Adjustments */
     .hero-parent div {
@@ -336,7 +355,7 @@ footer p{text-align: center;
     .about {
       text-align: center;
       padding: 20px;
-      margin-top: 50px;  
+      margin-block: 50px;  
     }
     
     .about div {
@@ -417,47 +436,8 @@ footer p{text-align: center;
 
 
   /* Responsive styles for phones  */
-    @media (max-width: 767px) {
-        nav {
-          flex-direction: column;
-          align-items: flex-start;
-          padding: 10px 20px;
-          position: relative;  
-        }
-        
-        .nav {
-          display: none;
-          flex-direction: column;
-          position: absolute;   
-          top: 50px;           
-          right: 0;            
-          width: 200px;         
-          background-color:#f7f7f7 ;
-          z-index: 1000;
-          margin: 0; 
-          height: 45vh;
-          position: fixed;
-        }
-        
-        .nav.active {
-          display: flex;
-        }
-        
-        .menu-icon {
-          position: absolute;
-          top: 10px;
-          right: 20px;
-          display: block;
-          font-size: 30px;
-          cursor: pointer;
-        }
-        
-        .nav2 {
-        padding: 5px;
-        font-size: 16px;
-    }
-    
-/* Adjust Hero Section for phones */
+
+/* Adjust Hero Section  */
     .hero-parent div {
       width: 90%;
     }
@@ -488,7 +468,7 @@ footer p{text-align: center;
 
 /* Adjust Grid to a single column*/
 .grid-container {
-  grid-template-columns: 1fr 1fr; /* one column */
+  grid-template-columns: 1fr 1fr; 
   grid-auto-rows: auto;
   width: 90%;
   height: auto;
@@ -502,7 +482,7 @@ footer p{text-align: center;
   grid-row: auto;
 }
    
-    .rock-climbing p{font-size: 20px;}
+.rock-climbing p{font-size: 20px;}
 
 /* quiz */
 .quiz h3{font-size: 20px;}
