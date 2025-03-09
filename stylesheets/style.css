@@ -376,13 +376,20 @@ footer p{text-align: center;
     }
     
 /* Grid Section */
-    .grid-container {
-      grid-template-columns: 1fr 1fr;
-      grid-template-rows: auto;
-      width: 90%;
-      height: auto;
-      margin: 20px auto;
-    }
+.grid-container {
+  grid-template-columns: 1fr 1fr; /* two equal columns */
+  grid-auto-rows: auto;
+  width: 90%;
+  height: auto;
+  margin: 20px auto;
+}
+.grid-container .item-1,
+.grid-container .item-2,
+.grid-container .item-3,
+.grid-container .item-4 {
+  grid-column: auto;
+  grid-row: auto;
+}
     
 /* Quiz Section */
     .quiz {
@@ -476,13 +483,21 @@ footer p{text-align: center;
     .about i,#green{font-size: 10px;}
 
 /* Adjust Grid to a single column*/
-    .grid-container {
-      grid-template-columns: 1fr;
-      grid-template-rows: auto;
-      width: 90%;
-      height: auto;
-      margin: 20px auto;
-    }
+.grid-container {
+  grid-template-columns: 1fr; /* one column */
+  grid-auto-rows: auto;
+  width: 90%;
+  height: auto;
+  margin: 20px auto;
+}
+.grid-container .item-1,
+.grid-container .item-2,
+.grid-container .item-3,
+.grid-container .item-4 {
+  grid-column: auto;
+  grid-row: auto;
+}
+   
     .rock-climbing p{font-size: 20px;}
 
 /* quiz */
