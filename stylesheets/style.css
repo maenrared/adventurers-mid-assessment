@@ -484,7 +484,7 @@ footer p{text-align: center;
 
 /* Adjust Grid to a single column*/
 .grid-container {
-  grid-template-columns: 1fr; /* one column */
+  grid-template-columns: 1fr 1fr; /* one column */
   grid-auto-rows: auto;
   width: 90%;
   height: auto;
